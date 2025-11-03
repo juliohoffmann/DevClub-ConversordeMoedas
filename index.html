@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de Moedas - DevClub</title>
+</head>
+
+<body>
+    <img class="logo" src="./assets/logo.gif" alt="DevClub Logo Animada">
+
+    <main>
+        <label>Converter <b>de</b>
+            <select class="currency-select-from">
+                <option value="real">R$ Real</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+            </select>
+        </label>
+        
+        <label>Converter <b>para</b>
+            <select class="currency-select-to">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="real">R$ Real</option>
+                <option value="euro">€ Euro</option>
+            </select>
+        </label>
+        
+        <label>Valor: 
+            <input class="imput-currency" placeholder="Digite o valor" type="number">
+        </label>
+        
+        <button class="convert-button">
+            Converter
+        </button>
+       
+        <section>
+            <div class="currency-box">
+                <img id="currency-img-from" src="./assets/logo bandeira do brasil.jpg" alt="logo referente à moeda de origem">
+                <p class="currency-name" id="currency-name-from">Real</p>
+                <p class="currency-value" id="currency-value-from">R$ 0,00</p>
+            </div>
+            
+            <div class="arrow-img">
+                <img src="./assets/Vector.png" alt="seta indicando conversão">
+            </div>
+            
+            <div class="currency-box">
+                <img id="currency-img-to" src="./assets/logo bandeira Estados Unidos.jpg" alt="logo referente à moeda de destino">
+                <p class="currency-name" id="currency-name-to">Dólar Americano</p>
+                <p class="currency-value" id="currency-value-to">US$ 0,00</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
